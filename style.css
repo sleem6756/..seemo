@@ -1,0 +1,155 @@
+/* Basic Reset and Font Styling */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    --sb-track-color: #232e33;
+    --sb-thumb-color: #6baf8d;
+    --sb-size: 1px;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 1px;
+}
+
+/* Header Styling */
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #555 !important;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    margin-left: 15px; /* Adjust spacing between nav links */
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #3498db !important;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/asuan-1.webp") no-repeat center center/cover;
+}
+
+/* Sections General Styling */
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Destinations Section */
+.destination-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination-info .btn-secondary {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.destination-info .btn-secondary:hover {
+    text-decoration: underline;
+}
+
+/* Packages Section */
+#packages {
+    background-color: #fff;
+}
+
+.package-item {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.package-item:hover {
+    border-color: #3498db;
+}
+
+.package-features li {
+    position: relative;
+    padding-left: 25px;
+}
+
+.package-features li::before {
+    content: '✓';
+    color: #27ae60;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Custom button for main sections */
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+/* Footer */
+.footer-section ul li a:hover {
+    color: #3498db !important;
+}
+
+.social-links a {
+    color: #ecf0f1;
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #3498db;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
